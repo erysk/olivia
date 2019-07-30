@@ -1,0 +1,12 @@
+require:
+  - rubocop-performance
+
+Metrics/BlockLength:
+  Exclude:
+    - Gemfile
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
