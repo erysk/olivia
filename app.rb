@@ -9,6 +9,10 @@ helpers do
     # 何かゴニョゴニョするならここで
     '@channel そろそろリモートもくもく会が始まるのでは'
   end
+
+  def time_report
+    "#{Time.now.hour}時をお伝えします。"
+  end
 end
 
 on(/^olivia ping/) do
@@ -17,4 +21,8 @@ end
 
 cron '50 20 * * 6' do
   remind_mokumoku
+end
+
+cron '0 * * * *' do
+  time_report
 end
