@@ -23,6 +23,6 @@ cron '50 20 * * 6' do
   remind_mokumoku
 end
 
-cron '0 * * * *' do
+cron '0 * * * *', dest_to: 'リモートもくもく会' do
   time_report
 end
