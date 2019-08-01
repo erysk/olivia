@@ -19,10 +19,7 @@ on(/^olivia ping/) do
   'pong'
 end
 
-cron '50 20 * * 6' do
+cron '0 19 * * 6', dest_to: 'リモートもくもく会' do
   remind_mokumoku
 end
 
-cron '0 * * * *', dest_to: 'リモートもくもく会' do
-  time_report
-end
