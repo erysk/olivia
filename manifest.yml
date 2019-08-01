@@ -1,5 +1,0 @@
-applications:
-- name: oliviaHubot
-  command: bundle exec ruby app.rb
-  instances: 1
-  memory: 256M
