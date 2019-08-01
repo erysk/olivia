@@ -7,8 +7,16 @@ set :service, 'slack'
 
 helpers do
   def remind_mokumoku
-    # 何かゴニョゴニョするならここで
-    '@channel そろそろリモートもくもく会が始まるのでは'
+    <<~MOKUMOKU
+      @channel
+      21時からリモートもくもくやるよ！
+
+      21:00 ~ もくもくTIME(VC×)
+      23:00 ~ 報告・質問・雑談
+
+      ↓↓↓↓  参加はこちら  ↓↓↓↓
+      https://discord.gg/PW529nv
+    MOKUMOKU
   end
 end
 
