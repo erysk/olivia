@@ -2,12 +2,21 @@
 
 require 'mobb'
 
+# shellで対話するときはコメントアウトしてね
 set :service, 'slack'
 
 helpers do
   def remind_mokumoku
-    # 何かゴニョゴニョするならここで
-    '@channel そろそろリモートもくもく会が始まるのでは'
+    <<~MOKUMOKU
+      @channel
+      21:00 からリモートもくもくやりますよ(入退室自由)
+      以下URLから参加してください(Discord必須)
+
+      https://discord.gg/PW529nv
+
+      21:00 ~ もくもくTIME(原則チャットのみ)
+      23:00 ~ VC(報告、雑談会)
+    MOKUMOKU
   end
 
   def time_report
@@ -22,4 +31,3 @@ end
 cron '0 19 * * 6', dest_to: 'リモートもくもく会' do
   remind_mokumoku
 end
-
