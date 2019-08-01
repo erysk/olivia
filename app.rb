@@ -18,10 +18,6 @@ helpers do
       23:00 ~ VC(報告、雑談会)
     MOKUMOKU
   end
-
-  def time_report
-    "#{Time.now.hour}時をお伝えします。"
-  end
 end
 
 on(/^olivia ping/) do
