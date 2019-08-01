@@ -8,3 +8,5 @@ cd olivia
 bundle install
 SLACK_TOKEN=YourSlackToken ruby app.rb
 ```
+
+icon: @noncom
