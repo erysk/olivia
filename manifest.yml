@@ -3,3 +3,4 @@ applications:
   command: ruby app.rb
   instances: 1
   memory: 256M
+  buildpacks: https://github.com/cloudfoundry/staticfile-buildpack.git
