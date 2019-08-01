@@ -9,13 +9,13 @@ helpers do
   def remind_mokumoku
     <<~MOKUMOKU
       @channel
-      21:00 からリモートもくもくやりますよ(入退室自由)
-      以下URLから参加してください(Discord必須)
+      21:00 からリモートもくもくやるよ
+      以下URLから参加してね
 
       https://discord.gg/PW529nv
 
-      21:00 ~ もくもくTIME(原則チャットのみ)
-      23:00 ~ VC(報告、雑談会)
+      21:00 ~ もくもくTIME(VC×)
+      23:00 ~ 報告、質問、雑談会
     MOKUMOKU
   end
 end
