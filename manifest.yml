@@ -1,5 +1,0 @@
-applications:
-  - name: OliviaSlack
-    command: ruby app.rb
-    path: .
-    memory: 128M
