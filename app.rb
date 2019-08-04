@@ -2,13 +2,14 @@
 
 require 'mobb'
 
-# shellで対話する場合はコメントアウトする
+# shellで対話するときはコメントアウトしてね
 set :service, 'slack'
 
 helpers do
   def remind_mokumoku
     <<~MOKUMOKU
       <!channel>
+
       21時からリモートもくもくやるよ！
 
       21:00 ~ もくもくTIME(VC×)
