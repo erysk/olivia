@@ -8,7 +8,7 @@ set :service, 'slack'
 helpers do
   def remind_mokumoku
     <<~MOKUMOKU
-      @channel
+      <!channel>
       21時からリモートもくもくやるよ！
 
       21:00 ~ もくもくTIME(VC×)
