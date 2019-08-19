@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activesupport (6.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+      zeitwerk (~> 2.1, >= 2.1.8)
     ast (2.4.0)
     chronic (0.10.2)
     concurrent-ruby (1.1.5)
@@ -17,7 +18,7 @@ GEM
     faye-websocket (0.10.9)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
-    gli (2.18.1)
+    gli (2.18.2)
     hashie (3.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -38,7 +39,7 @@ GEM
       eventmachine (~> 1.2)
       faye-websocket (~> 0.10)
       slack-ruby-client (~> 0.11)
-    rubocop (0.73.0)
+    rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -64,6 +65,7 @@ GEM
     websocket-extensions (0.1.4)
     whenever (0.11.0)
       chronic (>= 0.6.3)
+    zeitwerk (2.1.9)
 
 PLATFORMS
   ruby
@@ -74,4 +76,4 @@ DEPENDENCIES
   rubocop-performance
 
 BUNDLED WITH
-   2.0.2
+   2.1.0.pre.1
