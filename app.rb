@@ -25,11 +25,6 @@ on(/^olivia ping/) do
   'pong'
 end
 
-on(/^olivia stop/) do
-  puts 'アプリケーションを停止します'
-  exit!
-end
-
 cron '0 19 * * 6', dest_to: 'リモートもくもく会' do
   remind_mokumoku
 end
