@@ -30,4 +30,3 @@ end
 cron '0 19 * * 6', dest_to: 'リモートもくもく会' do
   remind_mokumoku
 end
-
